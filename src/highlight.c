@@ -129,8 +129,8 @@ static void hl_do_font(int idx, char_u *arg, int do_normal, int do_menu, int do_
 static char *(highlight_init_both[]) = {
     CENT("ErrorMsg term=standout ctermbg=DarkRed ctermfg=White",
 	 "ErrorMsg term=standout ctermbg=DarkRed ctermfg=White guibg=Red guifg=White"),
-    CENT("IncSearch term=reverse cterm=reverse",
-	 "IncSearch term=reverse cterm=reverse gui=reverse"),
+    CENT("IncSearch term=reverse ctermbg=Green ctermfg=Black",
+	 "IncSearch term=reverse ctermbg=Green ctermfg=Black gui=reverse"),
     CENT("ModeMsg term=bold cterm=bold",
 	 "ModeMsg term=bold cterm=bold gui=bold"),
     CENT("NonText term=bold ctermfg=Blue",
@@ -184,8 +184,8 @@ static char *(highlight_init_light[]) = {
 	 "MoreMsg term=bold ctermfg=DarkGreen gui=bold guifg=SeaGreen"),
     CENT("Question term=standout ctermfg=DarkGreen",
 	 "Question term=standout ctermfg=DarkGreen gui=bold guifg=SeaGreen"),
-    CENT("Search term=reverse ctermbg=Yellow ctermfg=NONE",
-	 "Search term=reverse ctermbg=Yellow ctermfg=NONE guibg=Yellow guifg=NONE"),
+    CENT("Search term=reverse ctermbg=Yellow ctermfg=Black",
+	 "Search term=reverse ctermbg=Yellow ctermfg=Black guibg=Yellow guifg=NONE"),
 #ifdef FEAT_SPELL
     CENT("SpellBad term=reverse ctermbg=LightRed",
 	 "SpellBad term=reverse ctermbg=LightRed guisp=Red gui=undercurl"),
