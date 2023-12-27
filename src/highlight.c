@@ -147,8 +147,8 @@ static char *(highlight_init_both[]) = {
 	 "VisualNOS term=underline,bold cterm=underline,bold gui=underline,bold"),
 #endif
 #ifdef FEAT_DIFF
-    CENT("DiffText term=reverse cterm=bold ctermbg=Red",
-	 "DiffText term=reverse cterm=bold ctermbg=Red gui=bold guibg=Red"),
+    CENT("DiffText term=reverse ctermfg=Black ctermbg=Red",
+	 "DiffText term=reverse ctermfg=Black ctermbg=Red gui=bold guibg=Red"),
 #endif
     CENT("PmenuSbar ctermbg=Grey",
 	 "PmenuSbar ctermbg=Grey guibg=Grey"),
@@ -223,12 +223,12 @@ static char *(highlight_init_light[]) = {
     CENT("Visual ctermbg=Green ctermfg=Black",
 	 "Visual ctermbg=Green ctermfg=Black guibg=Grey42 guifg=LightGrey"),
 #ifdef FEAT_DIFF
-    CENT("DiffAdd term=bold ctermbg=LightBlue",
-	 "DiffAdd term=bold ctermbg=LightBlue guibg=LightBlue"),
-    CENT("DiffChange term=bold ctermbg=LightMagenta",
-	 "DiffChange term=bold ctermbg=LightMagenta guibg=LightMagenta"),
-    CENT("DiffDelete term=bold ctermfg=Blue ctermbg=LightCyan",
-	 "DiffDelete term=bold ctermfg=Blue ctermbg=LightCyan gui=bold guifg=Blue guibg=LightCyan"),
+    CENT("DiffAdd term=bold ctermfg=Black ctermbg=LightBlue",
+	 "DiffAdd term=bold ctermfg=Black ctermbg=LightBlue guibg=LightBlue"),
+    CENT("DiffChange term=bold ctermfg=Black ctermbg=LightMagenta",
+	 "DiffChange term=bold ctermfg=Black ctermbg=LightMagenta guibg=LightMagenta"),
+    CENT("DiffDelete term=bold ctermfg=Black ctermbg=LightCyan",
+	 "DiffDelete term=bold ctermfg=Black ctermbg=LightCyan gui=bold guifg=Blue guibg=LightCyan"),
 #endif
     CENT("TabLine term=underline cterm=underline ctermfg=black ctermbg=LightGrey",
 	 "TabLine term=underline cterm=underline ctermfg=black ctermbg=LightGrey gui=underline guibg=LightGrey"),
